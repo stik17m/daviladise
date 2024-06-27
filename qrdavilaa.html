@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con imágenes</title>
+    <title>Página con imágenes y información</title>
     <style>
         body {
             background-color: #87CEEB; /* Celeste */
             margin: 0; /* Elimina el margen predeterminado del cuerpo */
             padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+            font-family: Arial, sans-serif; /* Fuente del texto */
         }
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* 100% del viewport height */
+            min-height: 100vh; /* 100% del viewport height */
+        }
+        .section {
+            width: 80%;
+            margin: 20px;
+            background-color: #fff; /* Fondo blanco para las secciones */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+        .section h2 {
+            color: #4CAF50; /* Color verde para los títulos */
+            margin-bottom: 10px;
+        }
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
         .image-container {
             text-align: center;
@@ -25,61 +42,13 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra más ligera para las imágenes */
         }
     </style>
 </head>
 <body>
-    <h2>Hosting</h2>
-            <p>El hosting, o alojamiento web, es un servicio que permite a individuos y organizaciones publicar sus sitios web en Internet. Consiste en proporcionar espacio en servidores conectados permanentemente a Internet, permitiendo el acceso a los sitios web las 24 horas del día, los 7 días de la semana.</p>
-            <p>Características clave del hosting incluyen:</p>
-            <ul>
-                <li><strong>Espacio en Disco:</strong> Cantidad de almacenamiento disponible para archivos y datos del sitio web.</li>
-                <li><strong>Ancho de Banda:</strong> Volumen de datos transferidos entre el sitio web y los usuarios.</li>
-                <li><strong>Uptime:</strong> Porcentaje de tiempo que el servidor está activo y accesible.</li>
-                <li><strong>Seguridad:</strong> Medidas para proteger el sitio web contra amenazas cibernéticas.</li>
-                <li><strong>Soporte Técnico:</strong> Asistencia proporcionada por el proveedor para resolver problemas técnicos.</li>
-                <li><strong>Panel de Control:</strong> Herramienta para gestionar el alojamiento y configurar el sitio web.</li>
-            </ul>
-            <p>Existen diferentes tipos de hosting como:</p>
-            <ul>
-                <li><strong>Hosting Compartido:</strong> Varios sitios web comparten recursos en un mismo servidor.</li>
-                <li><strong>VPS (Servidor Privado Virtual):</strong> Recursos dedicados en un entorno virtualizado.</li>
-                <li><strong>Hosting Dedicado:</strong> Servidor completo dedicado exclusivamente a un sitio web.</li>
-                <li><strong>Hosting en la Nube:</strong> Uso de recursos de múltiples servidores para escalabilidad.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Códigos QR</h2>
-            <p>Los códigos QR (Quick Response) son códigos de barras bidimensionales que almacenan información digitalmente. Están diseñados para ser escaneados fácilmente por dispositivos móviles, permitiendo a los usuarios acceder rápidamente a contenido en línea sin necesidad de escribir URL o datos manualmente.</p>
-            <p>Características de los códigos QR:</p>
-            <ul>
-                <li><strong>Versatilidad:</strong> Pueden contener URL, texto, números de teléfono, y más.</li>
-                <li><strong>Accesibilidad:</strong> Facilitan el acceso rápido a información mediante escaneo.</li>
-                <li><strong>Interactividad:</strong> Usados en marketing, logística, y gestión de información.</li>
-                <li><strong>Facilidad de Generación:</strong> Herramientas en línea para crear códigos QR personalizados.</li>
-                <li><strong>Seguimiento y Análisis:</strong> Permite rastrear y analizar la eficacia de campañas digitales.</li>
-            </ul>
-            <p>Los códigos QR son útiles para aplicaciones como:</p>
-            <ul>
-                <li>Enlaces a sitios web y redes sociales.</li>
-                <li>Descargas de aplicaciones móviles.</li>
-                <li>Autenticación y verificación de productos.</li>
-                <li>Acceso a información detallada en puntos de venta.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>WordPress</h2>
-            <p>WordPress es un sistema de gestión de contenido (CMS) de código abierto y gratuito, utilizado para crear y gestionar diversos tipos de sitios web, desde blogs personales hasta complejas tiendas en línea. Con una interfaz intuitiva y una gran comunidad de usuarios y desarrolladores, WordPress se destaca por su facilidad de uso y su capacidad de personalización.</p>
-            <p>Características y ventajas de WordPress incluyen:</p>
-            <ul>
-                <li><strong>Fácil de Usar:</strong> Interfaz amigable que permite a usuarios sin experiencia técnica gestionar contenido.</li>
-                <li><strong>Personalización:</strong> Amplia variedad de temas y plugins para adaptar el diseño y funcionalidad del sitio.</li>
-                <li><strong>SEO Amigable:</strong> Herramientas integradas para mejorar la visibilidad en motores de búsqueda.</li>
-                <li><strong>Comunidad Activa:</strong> Soporte continuo y actualizaciones regulares de seguridad.</li>
-                <li><strong>Escalabilidad:</strong> Capacidad para manejar desde sitios personales hasta grandes portales corporativos.</li>
     <div class="container">
         <div class="image-container">
             <center>Imagen 1</center>
@@ -97,8 +66,49 @@
             <center>PDF QR</center>
             <img src="qrpdf.png" alt="Imagen 4" class="image">
         </div>
+        
+        <!-- Información sobre Hosting -->
+        <div class="section">
+            <h2>Hosting</h2>
+            <p>El hosting o alojamiento web es un servicio que permite a individuos y organizaciones almacenar contenido en servidores accesibles a través de Internet. Aquí algunas características:</p>
+            <ul>
+                <li><strong>Espacio en Disco:</strong> Cantidad de almacenamiento disponible para el sitio web.</li>
+                <li><strong>Ancho de Banda:</strong> Capacidad de transferencia de datos entre el sitio y sus usuarios.</li>
+                <li><strong>Uptime:</strong> Tiempo durante el cual el servidor está en funcionamiento y accesible.</li>
+                <li><strong>Soporte Técnico:</strong> Asistencia proporcionada por el proveedor para resolver problemas técnicos.</li>
+                <li><strong>Seguridad:</strong> Medidas implementadas para proteger el sitio contra amenazas.</li>
+                <li><strong>Escalabilidad:</strong> Capacidad de adaptarse al crecimiento del sitio sin afectar su rendimiento.</li>
+            </ul>
+        </div>
+        
+        <!-- Información sobre WordPress -->
+        <div class="section">
+            <h2>WordPress</h2>
+            <p>WordPress es un sistema de gestión de contenido (CMS) que facilita la creación y administración de sitios web. Algunas ventajas y características incluyen:</p>
+            <ul>
+                <li><strong>Fácil de Usar:</strong> Interfaz intuitiva que permite a usuarios sin conocimientos técnicos gestionar contenido.</li>
+                <li><strong>Flexibilidad:</strong> Amplia gama de temas y plugins para personalizar la apariencia y funcionalidad.</li>
+                <li><strong>SEO Amigable:</strong> Herramientas integradas para optimizar el sitio para motores de búsqueda.</li>
+                <li><strong>Comunidad Activa:</strong> Gran comunidad de usuarios y desarrolladores que contribuyen con soporte y recursos.</li>
+                <li><strong>Actualizaciones Regulares:</strong> Mejoras continuas en seguridad y funcionalidad a través de actualizaciones.</li>
+            </ul>
+        </div>
+        
+        <!-- Información sobre Códigos QR -->
+        <div class="section">
+            <h2>Códigos QR</h2>
+            <p>Los códigos QR son códigos de barras bidimensionales que almacenan información que puede ser escaneada con dispositivos móviles. Algunas ventajas y usos incluyen:</p>
+            <ul>
+                <li><strong>Capacidad de Almacenamiento:</strong> Pueden contener diversos tipos de datos como URL, texto, números de teléfono, etc.</li>
+                <li><strong>Accesibilidad:</strong> Acceso rápido a la información escaneando el código con smartphones.</li>
+                <li><strong>Marketing:</strong> Utilizados en campañas para proporcionar enlaces rápidos a promociones y sitios web.</li>
+                <li><strong>Seguimiento:</strong> Permite rastrear la efectividad de campañas de marketing y la interacción del usuario.</li>
+                <li><strong>Personalización:</strong> Herramientas disponibles para personalizar el diseño y la apariencia de los códigos QR.</li>
+            </ul>
+        </div>
+        
     </div>
-    
 </body>
 </html>
+
 
